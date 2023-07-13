@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(99, 130, 156);
+        }
+
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .Who_am_I {
+            text-align: center;
+        }
+
+        .PROFFESSIONAL_SUMMARY,
+        .EDUCATION_AND_TRAINING,
+        .WORK_EXPERIENCE {
+            margin-top: 30px;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+{% extends "base.html" %}
+{%block bodycontent%}
+
+        <div class="PROFFESSIONAL_SUMMARY">
+            <h3 class="header">PROFFESSIONAL SUMMARY</h3>
+            <hr>
+            <img src="https://cache.careers360.mobi/media/article_images/2022/4/20/How-to-make-portfolio-for-design-admission.jpg"
+            />
+            <p class="content">Enthusiastic and committed personality with a natural ability to inspire and collaborate with people. Dedicated, ambitious, and goal-driven individual with progressive experience in research and education. Diligent and success-driven educator able to create an effective and motivational work environment. Constantly strives for professional and personal excellence.</p>
+        </div>
+
+        <div class="EDUCATION_AND_TRAINING">
+            <h3 class="header">EDUCATION AND TRAINING</h3>
+            <hr>
+            <ul>
+                <li>
+                    01/09/2020-Present<br>
+                    PhD in Higher Education, Department of Education<br>
+                    Central China Normal University, Wuhan, China
+                </li>
+                <li>
+                    01/09/2018-15/07/2020<br>
+                    Masters in Higher Education, Department of Education<br>
+                    Central China Normal University, Wuhan, China
+                </li>
+                <li>
+                    01/09/2014-01/06/2018<br>
+                    Bachelor of Pedagogy (English), Faculty of Foreign Languages (FFL)<br>
+                    Yerevan Brusov State University of Languages and Social Sciences, Yerevan, Armenia
+                </li>
+                <li>
+                    14/02/2023-28/02/2023<br>
+                    Training "Refugee Education in Conflict Areas"<br>
+                    Fundacja Stałego Rozwoju, Krakow, Poland
+                </li>
+                <li>
+                    10/06/2022-20/06/2022<br>
+                    The Significance of Non-Formal Education<br>
+                    Asociatia "Impreuna pentru scoala Ady Endre", Oradea, Romania
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
