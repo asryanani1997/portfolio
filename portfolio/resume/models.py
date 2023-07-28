@@ -35,3 +35,15 @@ class Education(models.Model):
 
     def __str__(self) -> str:
         return f"{self.university_name} university, degree is {self.degree}"
+
+class Message(models.Model):
+    full_name=models.CharField(max_length=50)
+    email=models.EmailField()
+    subject=models.CharField(max_length=100)
+    message=models.TextField(max_length=1000)
+
+class PortfolioProject(models.Model):
+    name=models.CharField(max_length=50)
+    image=models.ImageField(upload_to="media")
+    short_description=models.CharField(max_length=100)
+    description=models.TextField(max_length=1000)
