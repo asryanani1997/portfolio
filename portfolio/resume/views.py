@@ -27,7 +27,7 @@ def home(request):
     portfolio_projects= PortfolioProject.objects.all()
 
 
-    personal_info=PersonalInfo.objects.get(user_username="asryan.ani1997")
+    personal_info=PersonalInfo.objects.get(user__username="asryan.ani1997")
     messageForm= MessageForm()
     data = {
         "portfolio_projects": portfolio_projects,
@@ -37,8 +37,8 @@ def home(request):
     }
     return render(request, "index.html", context=data, status=status)
 
-#def portfolio_project (request, id): 
-    #project=get_object_or_404(PortfolioProject, id=id)
-    #return render(request, "portfolio-details.html", context={"project": project})
+def portfolio_project (request, id): 
+    project=get_object_or_404(PortfolioProject, id=id)
+    return render(request, "portfolio-details.html", context={"project": project})
 
 

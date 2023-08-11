@@ -43,7 +43,10 @@ class Message(models.Model):
     message=models.TextField(max_length=1000)
 
 class PortfolioProject(models.Model):
-    name=models.CharField(max_length=50)
-    image=models.ImageField(upload_to="media")
-    short_description=models.CharField(max_length=100)
-    description=models.TextField(max_length=1000)
+    name = models.CharField(max_length=50)
+    image = models.ImageField(upload_to="media")
+    short_description = models.CharField(max_length=50)
+    description = models.TextField(max_length=1000)
+    category = models.CharField(max_length=50)
+    client = models.CharField(max_length=50)
+    url = models.URLField()
