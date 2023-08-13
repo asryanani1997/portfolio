@@ -1,13 +1,16 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 # Create your models here.
 
 
 class Skill(models.Model):
     name = models.TextField(max_length=30)
-    value = models.PositiveIntegerField(
-        validators=[MaxValueValidator(100), MinValueValidator(1)], default=1)
+    value = models.PositiveIntegerField(validators=[MaxValueValidator(100), MinValueValidator(1)], default=1)
+    #user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self) -> str:
         return f"{self.name} skill value is {self.value}"

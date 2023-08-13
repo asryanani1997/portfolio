@@ -23,7 +23,7 @@ def home(request):
         else: 
             print("Tell them that the sent data is not vaild")
 
-    skills=Skill.objects.filter(name="admin")
+    skills=Skill.objects.all()
     portfolio_projects= PortfolioProject.objects.all()
 
 
