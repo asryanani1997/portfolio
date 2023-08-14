@@ -57,7 +57,7 @@ excellence.</p>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="{% static "assets/img/poster.jpg" %}" class="img-fluid" alt="">
+            <img src="{% static "assets/img/ani1.jpg" %}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>ESL Teacher &amp; Educator</h3>
@@ -250,9 +250,9 @@ excellence.</p>
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Exams</li>
-              <li data-filter=".filter-card">Curriculum</li>
-              <li data-filter=".filter-web">Extracurricular</li>
+              <li data-filter=".filter-exams">exams</li>
+              <li data-filter=".filter-curriculum">curriculum</li>
+              <li data-filter=".filter-extracurricular">extracurricular</li>
             </ul>
           </div>
         </div>
@@ -267,11 +267,11 @@ excellence.</p>
                 <h4>{{pproject.name}}</h4>
                 <p>{{pproject.short_description}}</p>
                 <div class="portfolio-links">
-                  <a
+                  <!-- <a
                   href="{% url 'portfolio_project' pproject.id %}"
                   title="Portfolio Details"
                   ><i class="bx bx-link"></i
-                ></a>
+                ></a> -->
                 </div>
               </div>
             </div>
